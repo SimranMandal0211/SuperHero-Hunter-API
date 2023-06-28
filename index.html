@@ -4,37 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superhero Hunter</title>
+
+    <!-- for icons -->
+    <script src="https://kit.fontawesome.com/df98e19b56.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-logo">
-                <img src="" alt="logo" class="logo">
-                <h2 class="logo-text">Superhero Hunter</h2>
+    <header class="flex">
+        <nav class="flex">
+            <div class="nav-logo flex">
+                <img src="" alt="logo" class="logo-img">
+                <h2>Superhero Hunter</h2>
             </div>
 
-            <div class="nav-buttons">
-                <div class="dl-toggler"></div>
-                <div class="favs-btn">
+            <div class="nav-buttons flex">
+                <div class="dl-toggler">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="favs-btn flex">
+                    <i class="fa-solid fa-heart"></i>
                     <p>Favourites</p>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="search-bar">
+    <main class="flex main">
+        <section class="search-bar flex">
             <div class="search-icon">
-
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="search-bar-text">
-
+                <input type="text" placeholder="Search for Superheros">
             </div>
-        </div>
+        </section>
 
-        <div class="superhero-img-box">
-            <img src="" alt="heros">
-        </div>
+        <section class="superhero-img-box">
+            <img src="./lightBg.jpg" alt="heros">
+            <!-- <img src="./darkBg.jpg" alt="heros"> -->
+        </section>
     </main>
     
 </body>
