@@ -36,4 +36,19 @@ $(document).ready(function() {
             isImage = true;
         }
     });
+
+    let isText1 = true;
+    const toggleText = $('#toggleText');
+    const favBtn = $('.favs-btn');
+    favBtn.on("click", function(){
+        $('#fav-icon').toggleClass("fa-heart fa-house");
+
+        if (isText1) {
+            toggleText.text("Home");
+            isText1 = false;
+          } else {
+            toggleText.text("Favourites");
+            isText1 = true;
+          }
+    });
 });
