@@ -31,7 +31,7 @@ nav{
 .nav-logo{
     justify-content: space-around;
     color: black;
-    width: 21%;
+    width: 25%;
     height: 100%;
 }
 
@@ -50,7 +50,8 @@ nav{
 
 /* nav-buttons */
 .nav-buttons{
-    width: 12%;
+    width: 20%;
+    justify-content: space-evenly;
 }
 
 .nav-buttons div{
@@ -64,12 +65,12 @@ nav{
 }
 
 .nav-buttons .dl-toggler{
-    width: 23%;
+    width: 15%;
     text-align: center;
 }
 
 .nav-buttons .favs-btn{
-    width: 70%;
+    width: 45%;
     font-weight: bold;
 }
 
@@ -90,51 +91,48 @@ nav{
 }
 
 .search-bar{
-    border-radius: .8rem;
-    background-color: rgb(49, 181, 234);
-    color: white;
     font-weight: bold;
-    font: 1.2rem;
+    font: 1.5rem;
     width: 30%;
-    /* height: 10%; */
     margin: 1.5rem;
-    justify-content: center;
-}
-.search-bar.dark{
-    background-color: navy;
 }
 
 .search-bar .search-icon{
     border-right: 3px solid navy;
-    box-shadow: -1px 0px 6px 3px navy;
-    border-top-left-radius: .8rem;
-    border-bottom-left-radius: .8rem;
-    width: 10%;
+    box-shadow: 0px 5px 10px 3px navy;
+    outline: none;
+    border: none;
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    width: 14%;
     padding: .8rem;
     text-align: center;
+    background-color: white;
 }
 .search-bar .search-icon.dark{
     border-right: 3px solid rgb(198, 0, 0);
-    box-shadow: -1px 0px 6px 3px rgb(198, 0, 0);
+    box-shadow: 0px 5px 10px 3px rgb(198, 0, 0);
 }
 
 .search-bar .search-bar-text{
     border-left: 3px solid navy;
-    box-shadow: 2px 0px 6px 3px navy;
-    border-top-right-radius: .8rem;
-    border-bottom-right-radius: .8rem;
-    width: 90%;
-    padding: .7rem;
+    box-shadow: -1px 4px 10px 3px navy;
+    border: none;
+    outline: none;
+    border-top-left-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+    width: 85%;
+    padding: .8rem;
 }
 .search-bar .search-bar-text.dark{
     border-left: 3px solid rgb(198, 0, 0);
-    box-shadow: 2px 0px 6px 3px rgb(198, 0, 0);
+    box-shadow: -1px 4px 10px 3px rgb(198, 0, 0);
 }
 
 .search-bar .search-bar-text input{
     border: none;
     outline: none;
-    background-color: transparent;
+    /* background-color: transparent; */
     width: 100%;
     /* padding: .3rem; */
     color: white;
