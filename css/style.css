@@ -92,8 +92,10 @@ nav{
 }
 
 .search-bar{
-    width: 35%;
+    width: 40%;
     margin: 1.5rem;
+    z-index: 1;
+    height: 85vh;
 }
 
 .search-bar form{
@@ -141,7 +143,7 @@ nav{
 
 .search-result{
     position: absolute;
-    width: 35%;
+    width: 40%;
 }
 
 .single-search-result{
@@ -190,6 +192,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index:  0;
 }
 
 .superhero-img-box img{

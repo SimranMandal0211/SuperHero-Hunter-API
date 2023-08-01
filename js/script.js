@@ -209,6 +209,9 @@ $(document).ready(function() {
             // adding the above created heroInfo object to favouritesArray
             favouritesArray.push(heroInfo);
 
+            console.log('add fav');
+            console.log('Fav list: ',favouritesArray);
+
             // Storing the new favouritesCharactersID map to localStorage after converting to string
             localStorage.setItem("favouritesCharacterIDs", JSON.stringify([...favouritesCharacterIDs]));
             // Setting the new favouritesCharacters array which now has the new character 
@@ -252,7 +255,8 @@ $(document).ready(function() {
                 }
             });
 
-            // console.log(newFavouritesArray)
+            console.log('remove fav');
+            console.log(newFavouritesArray);
         
             // Updating the new array in localStorage
             localStorage.setItem("favouriteCharacters",JSON.stringify(newFavouritesArray));

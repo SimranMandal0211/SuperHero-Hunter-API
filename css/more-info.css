@@ -12,6 +12,8 @@
     font-size: 1.3rem;
     height: 60%;
     width: 40%;
+
+    z-index: 1;
 }
 
 .info-box{

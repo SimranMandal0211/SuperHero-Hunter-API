@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super hero Hunter</title>
+
+    <!-- for icons -->
+    <script src="https://kit.fontawesome.com/df98e19b56.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/favourites.css">
+</head>
+<body>
+    
+    <header class="light flex">
+        <nav class="flex">
+            <a class="nav-logo flex" href="./index.html">
+                <img src="./images/logoImg.gif" alt="logo" class="logo-img">
+                <h1>Superhero Hunter</h1>
+            </a>
+
+            <div class="nav-buttons flex">
+                <a class="dl-toggler">
+                    <i id="toggleIcon" class="toggler fa-solid fa-moon"></i>
+                </a>
+                <a href="./index.html" class="favs-btn flex">
+                    <i id="fav-icon" class="fa-solid fa-house"></i>
+                    <p id="toggleText">Home</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="light flex main">
+        <section class="favourite-characters">
+            <div class="flex cards-container" id="cards-container">
+                <!-- Structure of the data that is added using DOM manipulation -->
+                <!-- <div class="card">
+                      <img src="${character.squareImage}" alt="">
+                      <span class="name">${character.name}</span>
+                      <span class="id">Id : ${character.id}</span>
+                      <span class="comics">Comics : ${character.comics}</span>
+                      <span class="series">Series : ${character.series}</span>
+                      <span class="stories">Stories : ${character.stories}</span>
+                      <a class="character-info" href="./more-info.html">
+                        <i class="fa-solid fa-circle-info"></i> &nbsp; More Info
+                      </a>
+                      <div style="display:none;">
+                           <span>${character.id}</span>
+                           <span>${character.name}</span>
+                           <span>${character.comics}</span>
+                           <span>${character.series}</span>
+                           <span>${character.stories}</span>
+                           <span>${character.description}</span>
+                           <span>${character.landscapeImage}</span>
+                           <span>${character.portraitImage}</span>
+                           <span>${character.squareImage}</span>
+                      </div>
+                      <button class="remove-btn"><i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites</button>
+                </div> -->
+            </div>
+       </section>
+
+        <section class="superhero-img-box">
+            <img id="toggleImage" src="./images/lightBg.jpg" alt="lightHeros">
+        </section>
+
+        <section>
+            <!-- Toasts for notifying user that character is added or removed from favourites -->
+            <span data-visiblity="hide" class="fav-toast">Added to Favourites</span>
+            <span data-visiblity="hide" class="remove-toast">Removed from Favourites</span>
+        </section>
+    </main>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
+    <script src="./js/favourites.js"></script>
+</body>
+</html>
