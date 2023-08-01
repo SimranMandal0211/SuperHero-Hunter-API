@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Super hero Hunter</title>
+
+    <!-- for icons -->
+    <script src="https://kit.fontawesome.com/df98e19b56.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/more-info.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="light flex">
+        <nav class="flex">
+            <a class="nav-logo flex" href="./index.html">
+                <img src="./images/logoImg.gif" alt="logo" class="logo-img">
+                <h1>Superhero Hunter</h1>
+            </a>
+
+            <div class="nav-buttons flex">
+                <a class="dl-toggler">
+                    <i id="toggleIcon" class="toggler fa-solid fa-moon"></i>
+                </a>
+                <a href="" class="favs-btn flex">
+                    <i id="fav-icon" class="fa-solid fa-heart"></i>
+                    <p id="toggleText">Favourites</p>
+                </a>
+                <a href="./index.html" class="favs-btn flex">
+                    <i class="fa-solid fa-house"></i>
+                    <p id="toggleText">Home</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="light flex main">
+        <section class="hero-info-box">
+            <div id="info-container" class="flex info-box">
+                <!-- Sturcture of the data that is added to favourites using DOM manipulation -->
+                
+                <!-- <div class="hero-name">${heroInfo.name}</div>
+                <div class="flex hero-img-and-more-info">
+                     <img id="portraitImage" class="hero-img" src="${heroInfo.portraitImage}" alt="">
+                     <img style="display:none;" id="landscapeImage" src="${heroInfo.landscapeImage}" alt="">
+                     
+                     <div class="more-info">
+                          <div class="id">
+                               <b>ID:</b><span>${heroInfo.id}</span>
+                          </div>
+                          <div class="comics">
+                               <b>Comics:</b><span>${heroInfo.comics}</span>
+                          </div>
+                          <div class="series">
+                               <b>Series:</b><span>${heroInfo.series}</span>
+                          </div>
+                          <div class="stories">
+                               <b>Stories:</b><span>${heroInfo.stories}</span>
+                          </div>
+                     </div>
+                </div>
+                <div class="hero-discription">
+                     <b>Discription:</b>
+                     <p>${heroInfo.description != "" ? heroInfo.description : "No Description Available"}</p>
+                </div>
+                <div style="display:none;">
+                     <span>${heroInfo.name}</span>
+                     <span>${heroInfo.portraitImage}</span>
+                     <span>${heroInfo.landscapeImage}</span>
+                     <span>${heroInfo.id}</span>
+                     <span>${heroInfo.comics}</span>
+                     <span>${heroInfo.series}</span>
+                     <span>${heroInfo.stories}</span>
+                     <span>${heroInfo.squareImage}</span>
+                     <span>${heroInfo.description}</span>
+                </div>
+                <button class="btn add-to-fav-btn">
+                    ${favouritesCharacterIDs.has(`${heroInfo.id}`) ? 
+                        "<i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites" :
+                        "<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites"
+                    }
+                </button> -->
+           </div>
+        </section>
+
+        <section class="superhero-img-box">
+            <img id="toggleImage" src="./images/lightBg.jpg" alt="lightHeros">
+        </section>
+    </main>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
+    <script src="./js/more-info.js"></script>
+    
+</body>
+</html>

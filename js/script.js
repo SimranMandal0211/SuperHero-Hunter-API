@@ -115,7 +115,7 @@ $(document).ready(function() {
                         <div class="img-info flex">
                             <img src="${hero.thumbnail.path+'/portrait_medium.' + hero.thumbnail.extension}" alt="">
                             <div class="hero-info">
-                                <a class="character-info" href="">
+                                <a class="character-info" href="./more-info.html">
                                         <span class="hero-name">${hero.name}</span>
                                 </a>
                             </div>

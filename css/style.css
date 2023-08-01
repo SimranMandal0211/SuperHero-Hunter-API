@@ -139,13 +139,17 @@ nav{
 
 /* search result list*/
 
-.single-search-result{
+.search-result{
     position: absolute;
+    width: 35%;
+}
+
+.single-search-result{
     border-radius: .5rem;
     background-color: rgba(56, 49, 49, 0.5); 
     backdrop-filter: blur(10px);
     height: 4.5rem;
-    width: 35%;
+    width: 100%;
     padding: 0 1rem;
     margin-top: .5rem;
     justify-content: space-between;
@@ -153,8 +157,8 @@ nav{
 
 .img-info{
     height: 100%;
-    width: 45%;
-    border: 2px solid red;
+    width: 50%;
+    /* border: 2px solid red; */
 }
 
 .img-info img{
