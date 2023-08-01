@@ -16,7 +16,7 @@ $(document).ready(function() {
         $("header").toggleClass("dark light");
         $("header h1").toggleClass("dark light");
 
-        $(".nav-buttons div").toggleClass("dark light");
+        $(".nav-buttons a").toggleClass("dark light");
         $("#button2").toggleClass("dark light");
 
         $(".main").toggleClass("dark light");
@@ -27,11 +27,11 @@ $(document).ready(function() {
 
         // toggle Image
         if(isImage){
-            toggleImage.attr("src", "darkBg.jpg");
+            toggleImage.attr("src", "./images/darkBg.jpg");
             toggleImage.attr("alt", "darkHeros");
             isImage = false;
         }else{
-            toggleImage.attr("src", "lightBg.jpg");
+            toggleImage.attr("src", "./images/lightBg.jpg");
             toggleImage.attr("alt", "lightHeros");
             isImage = true;
         }

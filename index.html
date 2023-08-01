@@ -16,33 +16,33 @@
     <header class="light flex">
         <nav class="flex">
             <div class="nav-logo flex">
-                <img src="logoImg.gif" alt="logo" class="logo-img">
+                <img src="./images/logoImg.gif" alt="logo" class="logo-img">
                 <h1>Superhero Hunter</h1>
             </div>
 
             <div class="nav-buttons flex">
-                <div class="dl-toggler">
+                <a class="dl-toggler">
                     <i id="toggleIcon" class="toggler fa-solid fa-moon"></i>
-                </div>
-                <div class="favs-btn flex">
+                </a>
+                <a href="./favorites.html" class="favs-btn flex">
                     <i id="fav-icon" class="fa-solid fa-heart"></i>
                     <p id="toggleText">Favourites</p>
-                </div>
+                </a>
             </div>
         </nav>
     </header>
 
     <main class="light flex main">
         <section class="search-bar">
-            <form action="" class="flex">
-                <input type="text" class="search-bar-text" placeholder="Search for Superheros...">
+            <form action="" class="search-bar-form flex">
+                <input type="text" class="search-bar-text" id="search-bar-input" name="search" placeholder="Search for Superheros...">
                 <button type="submit" class="search-icon"><i class="fa-solid fa-magnifying-glass" ></i></button>
-            </form>
+            </form>  
             
         </section>
 
         <section class="superhero-img-box">
-            <img id="toggleImage" src="lightBg.jpg" alt="lightHeros">
+            <img id="toggleImage" src="./images/lightBg.jpg" alt="lightHeros">
         </section>
     </main>
     
