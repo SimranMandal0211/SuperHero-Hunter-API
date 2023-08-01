@@ -24,7 +24,7 @@
                 <a class="dl-toggler">
                     <i id="toggleIcon" class="toggler fa-solid fa-moon"></i>
                 </a>
-                <a href="./favorites.html" class="favs-btn flex">
+                <a href="" class="favs-btn flex">
                     <i id="fav-icon" class="fa-solid fa-heart"></i>
                     <p id="toggleText">Favourites</p>
                 </a>
@@ -39,6 +39,40 @@
                 <button type="submit" class="search-icon"><i class="fa-solid fa-magnifying-glass" ></i></button>
             </form>  
             
+            <ul class="search-result" id="search-result">
+                <!-- <li class="single-search-result flex">
+                    <div class="img-info flex">
+                        <img src="${hero.thumbnail.path+'/portrait_medium.' + hero.thumbnail.extension}" alt="">
+            
+                        <div class="hero-info">
+                            <a href="" class="character-info">
+                                <span class="hero-name">${hero.name}</span>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="search-buttons">
+                        <button class="btn add-to-fav-btn">
+                            ${ favouritesCharacterIDs.has(`${hero.id}`) ? 
+                                "<i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites" :
+                                "<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites"
+                            }
+                        </button>
+                   </div>
+            
+                   <div style="display:none;">
+                        <span>${hero.name}</span>
+                        <span>${hero.description}</span>
+                        <span>${hero.comics.available}</span>
+                        <span>${hero.series.available}</span>
+                        <span>${hero.stories.available}</span>
+                        <span>${hero.thumbnail.path+'/portrait_uncanny.' + hero.thumbnail.extension}</span>
+                        <span>${hero.id}</span>
+                        <span>${hero.thumbnail.path+'/landscape_incredible.' + hero.thumbnail.extension}</span>
+                        <span>${hero.thumbnail.path+'/standard_fantastic.' + hero.thumbnail.extension}</span>
+                   </div>
+                </li> -->
+            </ul>
         </section>
 
         <section class="superhero-img-box">
