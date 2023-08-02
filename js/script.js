@@ -203,10 +203,10 @@ $(document).ready(function() {
             this.innerHTML = '<i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites';
             
             // Displaying the "Added to Favourites" toast to DOM
-            document.querySelector(".fav-toast").setAttribute("data-visiblity","show");
+            document.querySelector(".fav-toast").removeAttribute("hidden");
             // Deleting the "Added to Favourites" toast from DOM after 1 seconds
             setTimeout(function(){
-                document.querySelector(".fav-toast").setAttribute("data-visiblity","hide");
+                document.querySelector(".fav-toast").setAttribute("hidden", "");
             },1000);
         }
 
@@ -246,14 +246,16 @@ $(document).ready(function() {
             
             
             // Convering the "Remove from Favourites" button to "Add to Favourites" 
-            this.innerHTML = '<i class="fa-solid fa-heart"></i> &nbsp; Add to Favourites';
+            this.innerHTML = '<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites';
             
             // Displaying the "Remove from Favourites" toast to DOM
-            document.querySelector(".remove-toast").setAttribute("data-visiblity","show");
+            document.querySelector(".remove-toast").removeAttribute("hidden");            
             // Deleting the "Remove from Favourites" toast from DOM after 1 seconds
             setTimeout(function(){
-                document.querySelector(".remove-toast").setAttribute("data-visiblity","hide");
+                document.querySelector(".remove-toast").setAttribute("hidden", "");
+
             },1000);
+
             // console.log();
         }
 

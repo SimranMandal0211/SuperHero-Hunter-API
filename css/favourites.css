@@ -11,7 +11,7 @@
     flex-direction: row;
     flex-wrap:wrap;
     height: 100%;
-    width: 90vw;
+    width: 100vw;
     overflow-y: scroll;
     justify-content: center;
 }

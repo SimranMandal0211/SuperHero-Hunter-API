@@ -200,3 +200,27 @@ nav{
     width: 60%;
     height: 90%;
 }
+
+/* aside  */
+
+.popup{
+    position: relative;
+    bottom: 2rem;
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    border-style: double;
+    width: 22%;
+    padding: .8rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.fav-toast{
+    background-color: rgb(26, 129, 26);
+}
+
+.remove-toast{
+    background-color: rgb(240, 36, 36);
+}
