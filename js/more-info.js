@@ -89,9 +89,10 @@ function addEvent() {
 }
 
 function addToFavourites() {
-
+    let self = this;
     // If add to favourites button is cliked then
-    if (this.innerHTML == '<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites') {
+    console.log('Add to Fav: ',self.textContent.trim());
+    if(self.textContent.trim() === 'Add to Favourites'){
 
         // We cretate a new object containg revelent info of hero and push it into favouritesArray
         let heroInfo = {
@@ -145,7 +146,7 @@ function addToFavourites() {
         localStorage.setItem("favouriteCharacters", JSON.stringify(favouritesArray));
 
         // Convering the "Add to Favourites" button to "Remove from Favourites"
-        this.innerHTML = '<i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites';
+        self.innerHTML = '<i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites';
          
         // Displaying the "Added to Favourites" toast to DOM
         document.querySelector(".fav-toast").removeAttribute("hidden");
@@ -191,7 +192,7 @@ function addToFavourites() {
          
          
         // Convering the "Remove from Favourites" button to "Add to Favourites" 
-        this.innerHTML = '<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites';
+        self.innerHTML = '<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites';
          
         // Displaying the "Remove from Favourites" toast to DOM
         document.querySelector(".remove-toast").removeAttribute("hidden");            

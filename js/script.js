@@ -113,7 +113,7 @@ $(document).ready(function() {
                         </div>
 
                         <div class="search-buttons">
-                            <button class="btn add-to-fav-btn">
+                            <button class="add-to-fav-btn">
                             ${favouritesCharacterIDs.has(`${hero.id}`) ? '<i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites' :'<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites'}
                             </button>
                         </div>
@@ -150,8 +150,8 @@ $(document).ready(function() {
     // Function invoked when "Add to Favourites" button or "Remvove from favourites" button is click appropriate action is taken accoring to the button clicked
     function addToFavourites(){
         let self = this;
-        console.log('Add to Fav: ',self.innerHTML);
-        if(self.innerHTML == '<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites'){
+        console.log('Add to Fav: ',self.textContent.trim());
+        if(self.textContent.trim() === 'Add to Favourites'){
 
             // We cretate a new object containg revelent info of hero and push it into favouritesArray
             let heroInfo = {
@@ -166,6 +166,7 @@ $(document).ready(function() {
                 squareImage: this.parentElement.parentElement.children[2].children[8].innerHTML
             }
 
+            console.log('hero name:: ',heroInfo.name)
             // getting the favourites array which stores objects of character  
             // We get null is no such array is created earlier i.e user is running the website for the first time
             let favouritesArray = localStorage.getItem("favouriteCharacters");

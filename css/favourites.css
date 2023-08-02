@@ -70,3 +70,7 @@
     position: relative;
     bottom: 15rem;
 }
+
+.popup{
+    z-index: 2;
+}
