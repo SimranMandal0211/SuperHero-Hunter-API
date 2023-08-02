@@ -57,8 +57,8 @@ window.addEventListener("load", function () {
         </div>
         <button class="btn w90 add-to-fav-btn">
             ${favouritesCharacterIDs.has(`${heroInfo.id}`) ? 
-                "<i class=\"fa-solid fa-heart-circle-minus\"></i> &nbsp; Remove from Favourites" :
-                "<i class=\"fa-solid fa-heart fav-icon\"></i> &nbsp; Add to Favourites"
+                '<i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites' :
+                '<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites'
             }
         </button>
     `

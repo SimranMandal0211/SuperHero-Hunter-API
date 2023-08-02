@@ -105,9 +105,28 @@ function removeCharacterFromFavourites() {
     this.parentElement.remove();
 
     // displaying the "Removed from favourites" toast in DOM
-    document.querySelector(".remove-toast").setAttribute("data-visiblity", "show");
-    // Removing the "Removed from favourites" toast form DOM
-    setTimeout(function () {
-         document.querySelector(".remove-toast").setAttribute("data-visiblity", "hide");
-    }, 1000);
+    document.querySelector(".remove-toast").removeAttribute("hidden");            
+    // Deleting the "Remove from Favourites" toast from DOM after 1 seconds
+    setTimeout(function(){
+        document.querySelector(".remove-toast").setAttribute("hidden", "");
+    },1000);
+}
+
+
+// Function which stores the info object of character for which user want to see the info 
+function addInfoInLocalStorage() {
+    // This function basically stores the data of character in localStorage.
+    // When user clicks on the info button and when the info page is opened that page fetches the heroInfo and display the data  
+    let heroInfo = {
+         name: this.parentElement.children[7].children[1].innerHTML,
+         description: this.parentElement.children[7].children[5].innerHTML,
+         comics: this.parentElement.children[7].children[2].innerHTML,
+         series: this.parentElement.children[7].children[3].innerHTML,
+         stories: this.parentElement.children[7].children[4].innerHTML,
+         portraitImage: this.parentElement.children[7].children[7].innerHTML,
+         id: this.parentElement.children[7].children[0].innerHTML,
+         landscapeImage: this.parentElement.children[7].children[6].innerHTML
+    }
+
+    localStorage.setItem("heroInfo", JSON.stringify(heroInfo));
 }

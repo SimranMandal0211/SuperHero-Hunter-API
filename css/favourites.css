@@ -13,6 +13,7 @@
     height: 100%;
     width: 90vw;
     overflow-y: scroll;
+    justify-content: center;
 }
 
 .card{
@@ -50,4 +51,17 @@
     font-size: .9rem;
     cursor: pointer;
     margin-top: .2rem;
+}
+
+.no-characters{
+    width: 60%;
+    font-size: 2rem;
+    padding: 0.4rem;
+    background-color: rgba(238, 233, 233, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 3px gray;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom: 15rem;
 }

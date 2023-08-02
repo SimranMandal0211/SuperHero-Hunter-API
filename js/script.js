@@ -41,20 +41,6 @@ $(document).ready(function() {
         }
     });
 
-    let isText1 = true;
-    const toggleText = $('#toggleText');
-    const favBtn = $('.favs-btn');
-    favBtn.on("click", function(){
-        $('#fav-icon').toggleClass("fa-heart fa-house");
-
-        if (isText1) {
-            toggleText.text("Home");
-            isText1 = false;
-          } else {
-            toggleText.text("Favourites");
-            isText1 = true;
-          }
-    });
 
 
 
@@ -160,8 +146,7 @@ $(document).ready(function() {
     // Function invoked when "Add to Favourites" button or "Remvove from favourites" button is click appropriate action is taken accoring to the button clicked
     function addToFavourites() {
         // If add to favourites button is cliked then
-        if (this.innerHTML == '<i class="fa-solid fa-heart"></i> &nbsp; Add to Favourites') {
-            
+        if(this.innerHTML == '<i class="fa-solid fa-heart fav-icon"></i> &nbsp; Add to Favourites'){
             // We cretate a new object containg revelent info of hero and push it into favouritesArray
             let heroInfo = {
                 name: this.parentElement.parentElement.children[2].children[0].innerHTML,
@@ -208,9 +193,6 @@ $(document).ready(function() {
 
             // adding the above created heroInfo object to favouritesArray
             favouritesArray.push(heroInfo);
-
-            console.log('add fav');
-            console.log('Fav list: ',favouritesArray);
 
             // Storing the new favouritesCharactersID map to localStorage after converting to string
             localStorage.setItem("favouritesCharacterIDs", JSON.stringify([...favouritesCharacterIDs]));
