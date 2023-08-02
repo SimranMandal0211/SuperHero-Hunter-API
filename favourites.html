@@ -15,12 +15,15 @@
 <body>
     
     <header class="light flex">
+        <!-- Navbar -->
         <nav class="flex">
+            <!-- Site Icon and Name -->
             <a class="nav-logo flex" href="./index.html">
                 <img src="./images/logoImg.gif" alt="logo" class="logo-img">
                 <h1>Superhero Hunter</h1>
             </a>
 
+            <!-- Theme Button and Favourites Button -->
             <div class="nav-buttons flex">
                 <a class="dl-toggler">
                     <i id="toggleIcon" class="toggler fa-solid fa-moon"></i>
@@ -35,6 +38,7 @@
 
 
     <main class="light flex main">
+        <!-- Fav character list -->
         <section class="favourite-characters">
             <div class="flex cards-container" id="cards-container">
                 <!-- Structure of the data that is added using DOM manipulation -->
@@ -64,10 +68,12 @@
             </div>
        </section>
 
+       <!-- Background Image -->
         <section class="superhero-img-box">
             <img id="toggleImage" src="./images/lightBg.jpg" alt="lightHeros">
         </section>
 
+        <!-- Toasts for notifying user that character is removed from favourites -->
         <aside>
             <span hidden class="popup remove-toast">Removed from Favourites</span>
         </aside>
