@@ -26,7 +26,10 @@ $(document).ready(function() {
         $(".search-bar").toggleClass("dark light");
         $(".search-bar .search-icon").toggleClass("dark light");
         $(".search-bar .search-bar-text").toggleClass("dark light");
+        
         $(".add-to-fav-btn").toggleClass("dark light");
+        $(".fav-btns-bg").toggleClass("dark light");
+
         
 
         // toggle Image

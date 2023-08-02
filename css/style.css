@@ -148,8 +148,8 @@ nav{
 
 .single-search-result{
     border-radius: .5rem;
-    background-color: rgba(56, 49, 49, 0.5); 
-    backdrop-filter: blur(10px);
+    background-color: rgb(47 37 37 / 49%);
+    backdrop-filter: blur(2px);
     height: 4.5rem;
     width: 100%;
     padding: 0 1rem;

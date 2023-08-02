@@ -28,7 +28,7 @@
 .character-info{
     width: 100%;
     border-radius: .3rem;
-    background-color: navy;
+    /* background-color: navy; */
     text-align: center;
     cursor: pointer;
     color: white;
@@ -38,11 +38,16 @@
     font-weight: bold;
     font-size: .9rem;
 }
-
+.fav-btns-bg{
+    background-color: navy;
+}
+.fav-btns-bg.dark{
+    background-color: rgb(198, 0, 0);
+}
 .remove-btn{
     width: 100%;
     color: white;
-    background-color: navy;
+    /* background-color: navy; */
     border: none;
     outline: none;
     border-radius: .3rem;

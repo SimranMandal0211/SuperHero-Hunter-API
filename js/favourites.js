@@ -35,7 +35,7 @@ window.addEventListener("load", function () {
                 <span class="comics">Comics : ${character.comics}</span>
                 <span class="series">Series : ${character.series}</span>
                 <span class="stories">Stories : ${character.stories}</span>
-                <a class="character-info" href="./more-info.html">
+                <a class="fav-btns-bg character-info" href="./more-info.html">
                     <i class="fa-solid fa-circle-info"></i> &nbsp; More Info
                 </a>
                 <div style="display:none;">
@@ -49,7 +49,7 @@ window.addEventListener("load", function () {
                     <span>${character.portraitImage}</span>
                     <span>${character.squareImage}</span>
                 </div>
-                <button class="remove-btn">
+                <button class="fav-btns-bg remove-btn">
                     <i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites
                 </button>
             </div>
