@@ -107,53 +107,11 @@ function addToFavourites() {
             squareImage: this.parentElement.children[3].children[7].innerHTML
         }
 
-        // getting the favourites array which stores objects of character  
-        // We get null is no such array is created earlier i.e user is running the website for the first time
-        let favouritesArray = localStorage.getItem("favouriteCharacters");
-
-        // If favouritesArray is null (for the first time favourites array is null)
-        if (favouritesArray == null) {
-            favouritesArray = [];
-        } else {
-            // if it is not null then we parse so that it becomes an array 
-            favouritesArray = JSON.parse(localStorage.getItem("favouriteCharacters"));
-        }
-
-        // favouritesCharacterIDs is taken from localStorage for adding ID of the character which is added in favourites
-        // It is created because when we search for the characters which is already added in favourites we check that if the id of the character exist in this array then we display "Remove form favourites" insted of "Add to favourites"
-        let favouritesCharacterIDs = localStorage.getItem("favouritesCharacterIDs");
-
-         
-        if (favouritesCharacterIDs == null) {
-            // If we did't got the favouritesCharacterIDs then we iniitalize it with empty map
-            favouritesCharacterIDs = new Map();
-        } else {
-            // getting the map as object from localStorage and pasrsing it and then converting into map 
-            favouritesCharacterIDs = new Map(JSON.parse(localStorage.getItem("favouritesCharacterIDs")));
-            // favouritesCharacterIDs = new Map(Object.entries(favouritesCharacterIDs));
-        }
-
-        // again setting the new favouritesCharacterIDs array to localStorage
-        favouritesCharacterIDs.set(heroInfo.id, true);
-        // console.log(favouritesCharacterIDs)
-
-        // adding the above created heroInfo object to favouritesArray
-        favouritesArray.push(heroInfo);
-
-        // Storing the new favouritesCharactersID map to localStorage after converting to string
-        localStorage.setItem("favouritesCharacterIDs", JSON.stringify([...favouritesCharacterIDs]));
-        // Setting the new favouritesCharacters array which now has the new character 
-        localStorage.setItem("favouriteCharacters", JSON.stringify(favouritesArray));
+        addFav(heroInfo);
 
         // Convering the "Add to Favourites" button to "Remove from Favourites"
         self.innerHTML = '<i class="fa-solid fa-heart-circle-minus"></i> &nbsp; Remove from Favourites';
          
-        // Displaying the "Added to Favourites" toast to DOM
-        document.querySelector(".fav-toast").removeAttribute("hidden");
-        // Deleting the "Added to Favourites" toast from DOM after 1 seconds
-        setTimeout(function(){
-        document.querySelector(".fav-toast").setAttribute("hidden", "");
-        },1000);
     }
     // For removing the character form favourites array
     else{
