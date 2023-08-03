@@ -234,3 +234,95 @@ nav{
 .remove-toast{
     background-color: rgb(240, 36, 36);
 }
+
+/* media query */
+@media screen and (max-width: 1200px){
+    .nav-logo{
+        width: 30%;
+    }
+
+    .search-bar{
+        width: 50%;
+    }
+
+    .search-result{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .nav-logo{
+        width: 35%;
+    }
+
+    .search-bar{
+        width: 60%;
+    }
+    .search-result{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .nav-buttons{
+        width: 30%;
+    }
+    .nav-logo{
+        width: 40%;
+    }
+    .search-bar{
+        width: 70%;
+    }
+    .search-result{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-buttons{
+        width: 40%;
+    }
+    .nav-logo{
+        width: 50%;
+    }
+    .search-bar{
+        width: 80%;
+    }
+    .search-result{
+        width: 80%;
+    }
+
+    .hero-info-box {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .nav-buttons{
+        width: 50%;
+    }
+
+    .nav-logo{
+        width: 55%;
+    }
+    .search-bar{
+        width: 90%;
+    }
+    .search-result{
+        width: 90%;
+        height: 80%;
+    }
+
+    .hero-info-box {
+        width: 85%;
+    }
+    .hero-img-and-more-info{
+        flex-wrap: wrap;
+        height: 70%;
+    }
+
+    .hero-img-and-more-info img {
+        height: 50%;
+    }
+}

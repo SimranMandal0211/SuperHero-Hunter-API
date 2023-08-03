@@ -48,3 +48,26 @@
     top: 16rem;
     bottom: 0;
 }
+
+/* media query */
+
+@media screen and (max-width: 768px){
+    .hero-info-box {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .hero-info-box {
+        width: 85%;
+    }
+    .hero-img-and-more-info{
+        flex-wrap: wrap;
+        height: 70%;
+    }
+
+    .hero-img-and-more-info img {
+        height: 50%;
+    }
+}
